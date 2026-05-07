@@ -1,0 +1,66 @@
+/* 容器 */
+.do-page-my-report {
+  height: 100%;
+  padding: 16px 20px;
+  background-color: #fafafa;
+
+  /* 嵌套标题样式 */
+  .page-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  /* 嵌套卡片样式 */
+  .filter-card {
+    margin-bottom: 24px;
+    border-radius: 8px;
+
+    /* 嵌套 Ant Design 表单项微调 */
+    :deep(.ant-form-item) {
+      margin-right: 16px;
+    }
+  }
+
+  /* 状态伪类嵌套 */
+  .dropdown-label {
+    color: #666;
+    cursor: pointer;
+
+    &:hover {
+      color: #1890ff;
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+  ::v-deep .ant-table {
+    .ant-table-thead .ant-table-cell {
+      background: rgba(0, 11, 54, 0.02);
+      font-weight: 600;
+      font-size: 14px;
+      color: rgba(0, 11, 54, 0.85);
+    }
+    .ant-table-tbody .ant-table-cell {
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(0, 11, 54, 0.85);
+    }
+  }
+  ::v-deep .ant-pagination {
+    .ant-pagination-total-text {
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(0, 11, 54, 0.65);
+    }
+    .ant-pagination-item a {
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(0, 11, 54, 0.85);
+    }
+    .ant-pagination-item-active a {
+      color: #006be6;
+    }
+  }
+}
